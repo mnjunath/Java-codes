@@ -24,11 +24,13 @@ class Main {
             sum += count[i];
         }
         
-        if(sum == 0){
-            return true;
+         for (int i = 0; i < 26; i++) {
+            if (count[i] != 0) {
+                return false;
+            }
         }
         
-        return false;
+        return true;
     }
     
     public static void main(String[] args) {
@@ -42,4 +44,5 @@ class Main {
             System.out.println("N O T  A N A G R A M");
         }
     }
+
 }
