@@ -19,11 +19,6 @@ class Main {
             count[pointer]--;
         }
         
-        int sum = 0;
-        for(int i = 0; i < 26; i++){
-            sum += count[i];
-        }
-        
          for (int i = 0; i < 26; i++) {
             if (count[i] != 0) {
                 return false;
@@ -46,3 +41,4 @@ class Main {
     }
 
 }
+
